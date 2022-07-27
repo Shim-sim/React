@@ -1,10 +1,10 @@
 /* eslint-disable */
+
 import { Link } from 'react-router-dom'
-import { useState } from 'react'
+import useFetch from '../hooks/useFetch'
 
 const DayList = () => {
-	
-	const [days, setDays] = useState([])
+	const days = useFetch('https://study-json.run.goorm.io/days')
 	
 	return (
 		<ul className="list_day">

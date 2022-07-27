@@ -1,19 +1,19 @@
 /* eslint-disable */
-import dummy from './../db/data.json'
 import Word from './Word.js'
-import { Link, useParams  } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
+import useFetch from '../hooks/useFetch'
 
 const Day = () => {
 	
 	const { day } = useParams()
-	const wrodList = dummy.words.filter(word => word.day === Number(day));
+	const words = useFetch(`https://study-json.run.goorm.io/words?day=${day}`)
 	
 	return (
 	<>	
 		<h2>Day {day}</h2>
 		<table>
 			<tbody>
-				{wrodList.map(word => (
+				{words.map(word => (
 					<Word word={word} key={word.id}/>
 				))}
 			</tbody>
