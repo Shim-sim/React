@@ -40,6 +40,8 @@ const Word = ({word: w}) => {
 	}
 	
 	if (word.id === 0) return null
+	
+	
 	return (
 		<tr className={isDone ? "off" : ""}>
 			<td>

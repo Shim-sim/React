@@ -11,6 +11,10 @@
     {
       "id": 3,
       "day": 3
+    },
+    {
+      "day": 4,
+      "id": 4
     }
   ],
   "words": [
@@ -41,6 +45,34 @@
       "eng": "pencil",
       "kor": "연필",
       "isDone": false
+    },
+    {
+      "day": "4",
+      "eng": "Firefighter",
+      "kor": "소방관",
+      "isDone": false,
+      "id": 8
+    },
+    {
+      "day": "1",
+      "eng": "축구",
+      "kor": "soccer",
+      "isDone": false,
+      "id": 9
+    },
+    {
+      "day": "1",
+      "eng": "college",
+      "kor": "전문대학",
+      "isDone": false,
+      "id": 10
+    },
+    {
+      "day": "1",
+      "eng": "word",
+      "kor": "단어",
+      "isDone": false,
+      "id": 11
     }
   ]
 }

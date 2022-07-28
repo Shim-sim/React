@@ -6,6 +6,10 @@ import useFetch from '../hooks/useFetch'
 const DayList = () => {
 	const days = useFetch('https://study-json.run.goorm.io/days')
 	
+	if (days.length === 0) {
+		return <span>Loading...</span>
+	}
+	
 	return (
 		<ul className="list_day">
 			{days.map(day => (
