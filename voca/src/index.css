@@ -130,3 +130,15 @@ button {
   height: 40px;
   font-size: 20px;
 }
+
+.paginate {
+	cursor: pointer;
+	margin-top: 2.5rem;
+	display: flex;
+	justify-content: center;
+}
+
+.paginate svg {
+	color: dodgerblue;
+	font-size: 4rem;
+}
