@@ -8,7 +8,7 @@ const Word = ({word: w}) => {
 	const toggleShow = () => {
 		setIsShow(!isShow)
 	}
-	
+	console.log(word)
 	const toggleDone = () => {
 		fetch(`https://study-json.run.goorm.io/words/${word.id}`, {
 			method : 'PUT',
